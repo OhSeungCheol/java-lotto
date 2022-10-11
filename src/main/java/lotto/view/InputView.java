@@ -16,7 +16,7 @@ public class InputView {
     public static int getPurchaseAmount() {
         int purchaseAmount;
         try {
-            purchaseAmount = InputView.inputPurchaseAmount();
+            purchaseAmount = inputPurchaseAmount();
         } catch (IllegalArgumentException e) {
             return getPurchaseAmount();
         }
