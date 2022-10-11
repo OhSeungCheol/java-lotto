@@ -15,8 +15,7 @@ public class LottoApplication {
         int passiveLottoCount = InputView.getPassiveLottoCount();
         List<LottoNumbersWrapper> numbersCollection = InputView.getPassiveLottoNumbers(passiveLottoCount);
 
-        LottoMachine lottoMachine = new LottoMachine();
-        LottoWrapper lottoWrapper = lottoMachine.buyLotto(purchaseAmount, passiveLottoCount, numbersCollection);
+        LottoWrapper lottoWrapper = LottoMachine.buyLotto(purchaseAmount, passiveLottoCount, numbersCollection);
 
         ResultView.printLottoState(lottoWrapper, passiveLottoCount);
 
